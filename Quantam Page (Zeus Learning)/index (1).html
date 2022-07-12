@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page-Quantam</title>
+    <link rel="stylesheet" href="index_style.css" />
+  </head>
+  <body>
+    <!-- Header of Page--------------------------------- -->
+    <header class="header">
+      <nav>
+        <img
+          class="header-logo"
+          src="icons/logo used in header.svg"
+          alt="Quantum logo"
+        />
+      </nav>
+    </header>
+
+    <div class="main-container">
+      <!-- Login box-------------------------------------- -->
+      <div class="login-box">
+        <!-- Login-title---------------------------------------- -->
+        <div class="login-title">
+          <img class="backbtn" src="icons/back.svg" alt="Back button" />
+          <h1 class="title">Log in with Quantum</h1 >
+        </div>
+
+        <!-- Form-------------------------------------- -->
+        <form action="dashboard.html">
+          <!-- Radio button--------------------------- -->
+          <label class="radio-container"><p>District</p>
+            <input type="radio" checked="checked" value="District" name="radio">
+            <span class="radio-checkmark"></span>
+          </label>
+
+          <label class="radio-container"><p>Independant School</p>
+            <input type="radio" value="Independant School" name="radio">
+            <span class="radio-checkmark"></span>
+          </label>
+
+          <!-- Dropdown------------------------------- -->
+
+          <div class="select select-state">
+            <label for="state">State*</label>
+            <select name="state" id="state">
+              <option class="text1" value="albama">Alabama</option>
+              <!-- <option class="text1" value="albama">Albama</option> -->
+            </select>
+          </div>
+          <div class="select select-district">
+            <label for="district">District*</label>
+            <select name="district" id="district">
+              <option class="text1" value="albama-district">
+                Alabama School District
+              </option>
+              <!-- <option class="text1" value="albama">Albama</option> -->
+            </select>
+          </div>
+
+          <!-- Text inputs----------------------------- -->
+          <div class="txt_field username">
+            <input type="text" id="username" required />
+            <span></span>
+            <label for="username">Username/Email ID*</label>
+          </div>
+          <div class="forgot">FORGOT USERNAME?</div>
+          <div class="txt_field password">
+            <input type="text" id="password*" required />
+            <span></span>
+            <label for="password">Password*</label>
+          </div>
+          <div class="forgot">FORGOT PASSWORD?</div>
+
+          <!-- Remember Me checkbox---------------------- -->
+          <label class="checkbox-container"
+            >Remember Me
+            <input type="checkbox" checked="checked" />
+            <span class="checkmark"></span>
+          </label>
+
+          <!-- Log in button---------------------------- -->
+          <button type="submit">LOG IN</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer------------------------------------ -->
+    <div class="about-contact-div">
+      <span class="about-contact">About </span>
+      <span class="devider">|</span>
+      <span class="about-contact"> Contact Us</span>
+    </div>
+
+    <footer class="footer">
+      <img src="icons/logo used in footer.svg" alt="Quantum logo" />
+      <span class="devider">|</span>
+      <div>
+        <span>Copyright &copy; 2020-2021 </span>
+        <span class="zeus">Zeus Systems Pvt. Ltd.</span>
+        <span>All rights reserved.</span>
+      </div>
+    </footer>
+  </body>
+</html>
